@@ -12,8 +12,8 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 
 ## Tutorials used
 
-REST API: https://renatomoya.github.io/2015/05/09/Building-a-versioned-REST-API-with-Phoenix-Framework.html
-Ecto-Models: http://www.phoenixframework.org/docs/ecto-models
+  * REST API: https://renatomoya.github.io/2015/05/09/Building-a-versioned-REST-API-with-Phoenix-Framework.html
+  * Ecto-Models: http://www.phoenixframework.org/docs/ecto-models
 
 ## Testing with cURL
 
