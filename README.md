@@ -19,11 +19,11 @@ Ecto-Models: http://www.phoenixframework.org/docs/ecto-models
 
 Fetching all users: `GET /v1/users`
 
-  curl http://localhost:4000/v1/users
+    curl http://localhost:4000/v1/users
 
 Create new user: `POST /v1/user`
 
-  curl -X POST -H "Content-Type: application/json" -d '{"user": {"email": "bla@fasel.de", "password": "test"}}' http://localhost:4000/v1/users
+    curl -X POST -H "Content-Type: application/json" -d '{"user": {"email": "bla@fasel.de", "password": "test"}}' http://localhost:4000/v1/users
 
 
 ## Learn more about Elixir
