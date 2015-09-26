@@ -9,8 +9,8 @@ defmodule SensorApi.User do
     timestamps
   end
 
-  @required_fields ~w(email password created_at)
-  @optional_fields ~w()
+  @required_fields ~w(email password)
+  @optional_fields ~w(created_at)
 
   @doc """
   Creates a changeset based on the `model` and `params`.

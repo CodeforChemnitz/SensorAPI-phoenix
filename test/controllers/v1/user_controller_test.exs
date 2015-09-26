@@ -10,14 +10,14 @@ defmodule SensorApi.V1.UserControllerTest do
     {:ok, conn: conn}
   end
 
-  # test "lists all entries on index", %{conn: conn} do
-  #   conn = get conn, user_path(conn, :index)
-  #   assert json_response(conn, 200)["data"] == []
-  # end
+  test "lists all entries on index", %{conn: conn} do
+    conn = get conn, v1_user_path(conn, :index)
+    assert json_response(conn, 200)["data"] == []
+  end
   #
   # test "shows chosen resource", %{conn: conn} do
   #   user = Repo.insert! %User{}
-  #   conn = get conn, user_path(conn, :show, user)
+  #   conn = get conn, v1_user_path(conn, :show, user)
   #   assert json_response(conn, 200)["data"] == %{"id" => user.id,
   #     "email" => user.email,
   #     "password" => user.password,
@@ -26,7 +26,7 @@ defmodule SensorApi.V1.UserControllerTest do
   #
   # test "does not show resource and instead throw error when id is nonexistent", %{conn: conn} do
   #   assert_raise Ecto.NoResultsError, fn ->
-  #     get conn, user_path(conn, :show, -1)
+  #     get conn, v1_user_path(conn, :show, -1)
   #   end
   # end
 

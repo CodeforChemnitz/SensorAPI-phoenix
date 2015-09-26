@@ -14,11 +14,14 @@ defmodule SensorApi.Router do
   end
 
   scope "/", SensorApi do
-    pipe_through :api
+    pipe_through :browser
+    get "/", PageController, :index
 
-    scope "/v1", V1, as: :v1 do
-      resources "/users", UserController, except: [:new, :edit, :show, :index, :delete, :update]
-    end
+  end
+
+  scope "/v1", SensorApi.V1, as: :v1 do
+    pipe_through :api
+    resources "/users", UserController, except: [:new, :edit, :show, :delete, :update]
   end
 
   # Other scopes may use custom stacks.
